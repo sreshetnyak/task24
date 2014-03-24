@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class TTDrawStar;
+
 @interface TTViewController : UIViewController
+
+@property (weak,nonatomic) IBOutlet TTDrawStar *star;
+
+- (IBAction)drawStar:(id)sender;
+
+- (IBAction)clearWorkSpace:(id)sender;
 
 @end

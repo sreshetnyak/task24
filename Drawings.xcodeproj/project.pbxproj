@@ -21,6 +21,7 @@
 		A596ECCF18CE479C00139696 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A596ECB118CE479C00139696 /* UIKit.framework */; };
 		A596ECD718CE479C00139696 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A596ECD518CE479C00139696 /* InfoPlist.strings */; };
 		A596ECD918CE479C00139696 /* DrawingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A596ECD818CE479C00139696 /* DrawingsTests.m */; };
+		A5B1E85618D7B2E1002EE5D3 /* TTDrawStar.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B1E85518D7B2E1002EE5D3 /* TTDrawStar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A596ECD418CE479C00139696 /* DrawingsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawingsTests-Info.plist"; sourceTree = "<group>"; };
 		A596ECD618CE479C00139696 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A596ECD818CE479C00139696 /* DrawingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingsTests.m; sourceTree = "<group>"; };
+		A5B1E85418D7B2E1002EE5D3 /* TTDrawStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDrawStar.h; sourceTree = "<group>"; };
+		A5B1E85518D7B2E1002EE5D3 /* TTDrawStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDrawStar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				A596ECBF18CE479C00139696 /* Main.storyboard */,
 				A596ECC218CE479C00139696 /* TTViewController.h */,
 				A596ECC318CE479C00139696 /* TTViewController.m */,
+				A5B1E85418D7B2E1002EE5D3 /* TTDrawStar.h */,
+				A5B1E85518D7B2E1002EE5D3 /* TTDrawStar.m */,
 				A596ECC518CE479C00139696 /* Images.xcassets */,
 				A596ECB418CE479C00139696 /* Supporting Files */,
 			);
@@ -197,7 +202,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TT;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = sergey;
 				TargetAttributes = {
 					A596ECCA18CE479C00139696 = {
@@ -253,6 +258,7 @@
 				A596ECBE18CE479C00139696 /* TTAppDelegate.m in Sources */,
 				A596ECBA18CE479C00139696 /* main.m in Sources */,
 				A596ECC418CE479C00139696 /* TTViewController.m in Sources */,
+				A5B1E85618D7B2E1002EE5D3 /* TTDrawStar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +312,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -346,7 +351,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -405,7 +409,6 @@
 		A596ECE018CE479C00139696 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Drawings.app/Drawings";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -428,7 +431,6 @@
 		A596ECE118CE479C00139696 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Drawings.app/Drawings";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -463,6 +465,7 @@
 				A596ECDE18CE479C00139696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A596ECDF18CE479C00139696 /* Build configuration list for PBXNativeTarget "DrawingsTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +474,7 @@
 				A596ECE118CE479C00139696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
