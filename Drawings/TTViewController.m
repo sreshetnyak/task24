@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.star.userInteractionEnabled = NO;
 	// Do any additional setup after loading the view, typically from a nib.
     
 //    Ученик.
@@ -41,19 +43,31 @@
     
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-        [self.star setNeedsDisplay];
+- (IBAction)drawStar:(id)sender {
+    self.star.canvas.image = nil;
+    self.star.userInteractionEnabled = NO;
+    [self.star drowStar];
 }
+
+- (IBAction)paintMode:(id)sender {
+    self.star.canvas.image = nil;
+    if (!self.star.userInteractionEnabled) {
+        self.star.userInteractionEnabled = YES;
+    }
+}
+
+- (IBAction)clearSpace:(id)sender {
+    self.star.canvas.image = nil;
+}
+
+- (IBAction)randomRGB:(id)sender {
+    [self.star randomRGBColor];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)drawStar:(id)sender {
-}
-
-- (IBAction)clearWorkSpace:(id)sender {
-     self.star = nil;
-}
 @end

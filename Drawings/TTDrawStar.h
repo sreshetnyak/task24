@@ -10,6 +10,12 @@
 
 @interface TTDrawStar : UIView
 
+@property (assign,nonatomic) BOOL clearState;
+
+@property (weak,nonatomic) IBOutlet UIImageView *canvas;
+
+- (void)drowStar;
+- (void)randomRGBColor;
 
 @end
 

@@ -15,7 +15,8 @@
 @property (weak,nonatomic) IBOutlet TTDrawStar *star;
 
 - (IBAction)drawStar:(id)sender;
-
-- (IBAction)clearWorkSpace:(id)sender;
+- (IBAction)paintMode:(id)sender;
+- (IBAction)clearSpace:(id)sender;
+- (IBAction)randomRGB:(id)sender;
 
 @end
